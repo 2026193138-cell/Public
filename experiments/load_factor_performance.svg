@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:sans-serif;font-size:12px} .title{font-size:18px;font-weight:bold}</style>
+<text x="480" y="24" text-anchor="middle" class="title">Hash Table Performance by Load Factor</text>
+<line x1="85.00" y1="45" x2="85.00" y2="530" stroke="#dddddd"/>
+<text x="85.00" y="552" text-anchor="middle">0</text>
+<line x1="295.00" y1="45" x2="295.00" y2="530" stroke="#dddddd"/>
+<text x="295.00" y="552" text-anchor="middle">1</text>
+<line x1="505.00" y1="45" x2="505.00" y2="530" stroke="#dddddd"/>
+<text x="505.00" y="552" text-anchor="middle">2</text>
+<line x1="715.00" y1="45" x2="715.00" y2="530" stroke="#dddddd"/>
+<text x="715.00" y="552" text-anchor="middle">3</text>
+<line x1="925.00" y1="45" x2="925.00" y2="530" stroke="#dddddd"/>
+<text x="925.00" y="552" text-anchor="middle">4</text>
+<line x1="85" y1="530.00" x2="925" y2="530.00" stroke="#dddddd"/>
+<text x="75" y="534.00" text-anchor="end">0.0</text>
+<line x1="85" y1="433.00" x2="925" y2="433.00" stroke="#dddddd"/>
+<text x="75" y="437.00" text-anchor="end">1.0</text>
+<line x1="85" y1="336.00" x2="925" y2="336.00" stroke="#dddddd"/>
+<text x="75" y="340.00" text-anchor="end">2.0</text>
+<line x1="85" y1="239.00" x2="925" y2="239.00" stroke="#dddddd"/>
+<text x="75" y="243.00" text-anchor="end">3.0</text>
+<line x1="85" y1="142.00" x2="925" y2="142.00" stroke="#dddddd"/>
+<text x="75" y="146.00" text-anchor="end">4.0</text>
+<line x1="85" y1="45.00" x2="925" y2="45.00" stroke="#dddddd"/>
+<text x="75" y="49.00" text-anchor="end">5.0</text>
+<rect x="85" y="45" width="840" height="485" fill="none" stroke="#555555"/>
+<text x="505.0" y="585" text-anchor="middle">Load factor</text>
+<text x="18" y="287.5" text-anchor="middle" transform="rotate(-90 18 287.5)">Average probe count</text>
+<polyline fill="none" stroke="#1f77b4" stroke-width="2.5" points="137.50,420.51 190.00,408.76 242.50,396.70 295.00,384.64 347.50,372.65 400.00,360.39 505.00,336.04 610.00,311.49 715.00,287.49 925.00,238.94"/>
+<circle cx="137.50" cy="420.51" r="3" fill="#1f77b4"/>
+<circle cx="190.00" cy="408.76" r="3" fill="#1f77b4"/>
+<circle cx="242.50" cy="396.70" r="3" fill="#1f77b4"/>
+<circle cx="295.00" cy="384.64" r="3" fill="#1f77b4"/>
+<circle cx="347.50" cy="372.65" r="3" fill="#1f77b4"/>
+<circle cx="400.00" cy="360.39" r="3" fill="#1f77b4"/>
+<circle cx="505.00" cy="336.04" r="3" fill="#1f77b4"/>
+<circle cx="610.00" cy="311.49" r="3" fill="#1f77b4"/>
+<circle cx="715.00" cy="287.49" r="3" fill="#1f77b4"/>
+<circle cx="925.00" cy="238.94" r="3" fill="#1f77b4"/>
+<polyline fill="none" stroke="#2ca02c" stroke-width="2.5" points="137.50,420.51 190.00,408.73 242.50,396.43 295.00,384.43 347.50,372.68 400.00,359.86 505.00,335.72 610.00,311.07 715.00,287.21 925.00,238.55"/>
+<circle cx="137.50" cy="420.51" r="3" fill="#2ca02c"/>
+<circle cx="190.00" cy="408.73" r="3" fill="#2ca02c"/>
+<circle cx="242.50" cy="396.43" r="3" fill="#2ca02c"/>
+<circle cx="295.00" cy="384.43" r="3" fill="#2ca02c"/>
+<circle cx="347.50" cy="372.68" r="3" fill="#2ca02c"/>
+<circle cx="400.00" cy="359.86" r="3" fill="#2ca02c"/>
+<circle cx="505.00" cy="335.72" r="3" fill="#2ca02c"/>
+<circle cx="610.00" cy="311.07" r="3" fill="#2ca02c"/>
+<circle cx="715.00" cy="287.21" r="3" fill="#2ca02c"/>
+<circle cx="925.00" cy="238.55" r="3" fill="#2ca02c"/>
+<polyline fill="none" stroke="#98df8a" stroke-width="2.5" points="137.50,420.88 190.00,408.75 242.50,396.62 295.00,384.50 347.50,372.38 400.00,360.25 505.00,336.00 610.00,311.75 715.00,287.50 925.00,239.00"/>
+<circle cx="137.50" cy="420.88" r="3" fill="#98df8a"/>
+<circle cx="190.00" cy="408.75" r="3" fill="#98df8a"/>
+<circle cx="242.50" cy="396.62" r="3" fill="#98df8a"/>
+<circle cx="295.00" cy="384.50" r="3" fill="#98df8a"/>
+<circle cx="347.50" cy="372.38" r="3" fill="#98df8a"/>
+<circle cx="400.00" cy="360.25" r="3" fill="#98df8a"/>
+<circle cx="505.00" cy="336.00" r="3" fill="#98df8a"/>
+<circle cx="610.00" cy="311.75" r="3" fill="#98df8a"/>
+<circle cx="715.00" cy="287.50" r="3" fill="#98df8a"/>
+<circle cx="925.00" cy="239.00" r="3" fill="#98df8a"/>
+<polyline fill="none" stroke="#d62728" stroke-width="2.5" points="137.50,505.83 190.00,481.14 242.50,457.18 295.00,433.49 347.50,409.01 400.00,384.29 505.00,336.17 610.00,289.23 715.00,238.12 925.00,141.39"/>
+<circle cx="137.50" cy="505.83" r="3" fill="#d62728"/>
+<circle cx="190.00" cy="481.14" r="3" fill="#d62728"/>
+<circle cx="242.50" cy="457.18" r="3" fill="#d62728"/>
+<circle cx="295.00" cy="433.49" r="3" fill="#d62728"/>
+<circle cx="347.50" cy="409.01" r="3" fill="#d62728"/>
+<circle cx="400.00" cy="384.29" r="3" fill="#d62728"/>
+<circle cx="505.00" cy="336.17" r="3" fill="#d62728"/>
+<circle cx="610.00" cy="289.23" r="3" fill="#d62728"/>
+<circle cx="715.00" cy="238.12" r="3" fill="#d62728"/>
+<circle cx="925.00" cy="141.39" r="3" fill="#d62728"/>
+<polyline fill="none" stroke="#ff9896" stroke-width="2.5" points="137.50,505.75 190.00,481.50 242.50,457.25 295.00,433.00 347.50,408.75 400.00,384.50 505.00,336.00 610.00,287.50 715.00,239.00 925.00,142.00"/>
+<circle cx="137.50" cy="505.75" r="3" fill="#ff9896"/>
+<circle cx="190.00" cy="481.50" r="3" fill="#ff9896"/>
+<circle cx="242.50" cy="457.25" r="3" fill="#ff9896"/>
+<circle cx="295.00" cy="433.00" r="3" fill="#ff9896"/>
+<circle cx="347.50" cy="408.75" r="3" fill="#ff9896"/>
+<circle cx="400.00" cy="384.50" r="3" fill="#ff9896"/>
+<circle cx="505.00" cy="336.00" r="3" fill="#ff9896"/>
+<circle cx="610.00" cy="287.50" r="3" fill="#ff9896"/>
+<circle cx="715.00" cy="239.00" r="3" fill="#ff9896"/>
+<circle cx="925.00" cy="142.00" r="3" fill="#ff9896"/>
+<line x1="105" y1="60" x2="129" y2="60" stroke="#1f77b4" stroke-width="3"/>
+<text x="135" y="64">Insertion measured</text>
+<line x1="105" y1="80" x2="129" y2="80" stroke="#2ca02c" stroke-width="3"/>
+<text x="135" y="84">Successful lookup measured</text>
+<line x1="105" y1="100" x2="129" y2="100" stroke="#98df8a" stroke-width="3"/>
+<text x="135" y="104">Successful lookup theoretical</text>
+<line x1="105" y1="120" x2="129" y2="120" stroke="#d62728" stroke-width="3"/>
+<text x="135" y="124">Unsuccessful lookup measured</text>
+<line x1="105" y1="140" x2="129" y2="140" stroke="#ff9896" stroke-width="3"/>
+<text x="135" y="144">Unsuccessful lookup theoretical</text>
+</svg>

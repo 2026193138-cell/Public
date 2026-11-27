@@ -35,10 +35,15 @@
 | --- | --- |
 | 테스트 | `make test` |
 | 웹 서버 (포트 8000) | `make serve` |
+| 체이닝·선형 탐사 비교 UI (포트 8001) | `make compare` |
 | 충돌 실험 | `make experiment` |
 | 놓친 단계 따라잡기 | `sh tools/catchup.sh <단계 번호>` |
 
 외부 라이브러리는 쓰지 않습니다. Python 표준 모듈만으로 충분합니다.
+
+`make compare`는 기존 URL 단축기 화면과 별도로 실행됩니다. 비교 UI에서
+같은 `key=value` 테스트 데이터를 두 방식에 넣고, `/chaining`,
+`/linear-probing`, `/compare` 화면에서 각각의 저장 결과를 확인할 수 있습니다.
 
 ## 로컬에서 하기
 

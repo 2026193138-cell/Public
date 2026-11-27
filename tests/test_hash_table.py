@@ -48,6 +48,26 @@ class HashTableTest(unittest.TestCase):
         self.assertEqual(table.get("b"), 2)
         self.assertEqual(table.get("c"), 3)
 
+    def test_collisions_preserve_chain_order_and_support_search_and_delete(self):
+        table = HashTable()
+        colliding_items = [("a", 1, 97), ("q", 2, 113), ("A", 3, 65)]
+
+        for key, value, _ in colliding_items:
+            table.put(key, value)
+
+        snapshot = table.snapshot()
+        self.assertEqual(snapshot[1], (1, colliding_items))
+        for key, value, _ in colliding_items:
+            self.assertTrue(table.contains(key))
+            self.assertEqual(table.get(key), value)
+
+        self.assertEqual(table.delete("q"), 2)
+        self.assertFalse(table.contains("q"))
+        with self.assertRaises(KeyError):
+            table.get("q")
+        self.assertEqual(table.get("a"), 1)
+        self.assertEqual(table.get("A"), 3)
+
     def test_resize_rehashes_existing_items(self):
         table = HashTable(capacity=4)
 

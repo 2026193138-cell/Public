@@ -56,6 +56,15 @@ class HashTable:
                 return value
         raise KeyError(key)
 
+    def snapshot(self):
+        result = []
+        for bucket_index, bucket in enumerate(self._buckets):
+            chain = []
+            for key, value in bucket:
+                chain.append((key, value, self._hash(key)))
+            result.append((bucket_index, chain))
+        return result
+
     def _resize(self):
         old_buckets = self._buckets
         self.capacity *= 2
